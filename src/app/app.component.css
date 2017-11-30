@@ -12,3 +12,6 @@
     white-space: nowrap;
     display: inline-block;
 }
+.yellow {
+    background-color: yellow;
+}

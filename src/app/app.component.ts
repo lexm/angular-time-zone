@@ -9,7 +9,9 @@ import * as moment from 'moment';
 export class AppComponent {
   title = 'US Time Zone Display';
   timeText = '';
+  tz = 0;
   showTime = function(offset) {
+    this.tz = offset;
     if(offset === 0) {
       this.timeText = '';
     } else {

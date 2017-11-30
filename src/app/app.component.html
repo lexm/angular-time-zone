@@ -4,10 +4,10 @@
     {{ title }}
   </h1>
   <div class="bigbox">
-    <div class="littlebox" (click)="showTime(-8)">PST</div>
-    <div class="littlebox" (click)="showTime(-7)">MST</div>
-    <div class="littlebox" (click)="showTime(-6)">CST</div>
-    <div class="littlebox" (click)="showTime(-5)">EST</div>
+    <div class="littlebox" (click)="showTime(-8)" [ngClass]="{'yellow': tz === -8}">PST</div>
+    <div class="littlebox" (click)="showTime(-7)" [ngClass]="{'yellow': tz === -7}">MST</div>
+    <div class="littlebox" (click)="showTime(-6)" [ngClass]="{'yellow': tz === -6}">CST</div>
+    <div class="littlebox" (click)="showTime(-5)" [ngClass]="{'yellow': tz === -5}">EST</div>
     <div class="littlebox" (click)="showTime(0)">Clear</div>
   </div>
   <h2>
